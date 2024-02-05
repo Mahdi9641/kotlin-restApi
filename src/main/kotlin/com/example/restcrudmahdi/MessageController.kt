@@ -21,7 +21,7 @@ class MessageController constructor(
     }
 
     @GetMapping("/getMessage/{message}")
-    fun getMessage(@PathVariable(value = "message") message: String): Message{
+    fun getMessage(@PathVariable(value = "message") message: String): List<Message>{
         return messageService.getMessage(message)
     }
 

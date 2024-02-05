@@ -6,5 +6,5 @@ import kotlin.jvm.Throws
 
 interface MessageService: BaseService<Message> {
 
-    fun getMessage(entity: String): Message
+    fun getMessage(entity: String): List<Message>
 }
